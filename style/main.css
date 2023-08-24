@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #000;
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --aqua: #14d9c4;
+  --black-8: rgba(0, 0, 0, 0.08);
+  --gunmetal: #54585a;
+  --white: #fff;
+  --blue-green: #099d8d;
+  --cool-grey: #b8b8b9;
+  font-size: 62.5%;
+}
+.container {
+  margin: 0 15px;
+}
+.page-header {
+  color: var(--white);
+  background-color: var(--blue-green);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  text-transform: uppercase;
+  height: 60px;
+}
+.title-header {
+}
