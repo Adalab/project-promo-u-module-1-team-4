@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --black-8: rgba(0, 0, 0, 0.08);
+  --light-grey-blue: rgba(184, 184, 185, 0.1);
+  --gunmetal: #54585a;
+  --cool-grey: #b8b8b9;
+  --white: #fff;
+
+  --aqua: #14d9c4;
+  --aqua-75: rgb(20, 217, 196, 0.75);
+  --blue-green: #099d8d; 
+  --blue-green-95: rgb(9, 157, 141, 0.95); 
+
+  --content: "Open Sans", sans-serif;
+  --titles: "Rubik", sans-serif;
+
+  --SemiBold: 600;
+  --Medium: 500;
+  --Regular: 400;
+
+  font-size: 62.5%;
+}

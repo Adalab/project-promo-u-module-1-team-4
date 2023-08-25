@@ -1,0 +1,61 @@
+
+/* Nombre del grupo */
+.TextStyle-13 {
+  color: var(--white);
+  font-family: var(--titles);
+  font-size: 1.6rem;
+  font-weight: var(--Medium);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+}
+
+/* Quiénes somos */
+.TextStyle-7 {
+  color: var(--white);
+  font-family: var(--titles);
+  font-size: 1.5rem;
+  font-weight: var(--Medium);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+/* texto del hero */
+.TextStyle-10 {
+  color: var(--black);
+  font-family: var(--content);
+  font-size: 1.8rem;
+  font-weight: var(--SemiBold);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.39;
+  letter-spacing: normal;
+}
+
+/* Equipo */
+.TextStyle-14 {
+  color: var(--aqua);
+  font-family: var(--titles);
+  font-size: 2.4rem;
+  font-weight: var(--Medium);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+}
+
+/* párrafos */
+.TextStyle-4 {
+  color: var(--gunmetal);
+  font-family: var(--content);
+  font-size: 1.6rem;
+  font-weight: var(--Regular);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+}

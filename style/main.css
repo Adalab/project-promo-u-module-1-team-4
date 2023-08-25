@@ -1,40 +1,23 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-:root {
-  --black: #000;
-  --light-grey-blue: rgba(184, 184, 185, 0.1);
-  --aqua: #14d9c4;
-  --black-8: rgba(0, 0, 0, 0.08);
-  --gunmetal: #54585a;
-  --white: #fff;
-  --blue-green: #099d8d;
-  --cool-grey: #b8b8b9;
-  --content: "Open Sans", sans-serif;
-  --titles: "Rubik", sans-serif;
-  font-size: 62.5%;
-}
+
+/* ----------- ↓ CÓDIGO BASE // BORRAR!! ↓  ----------- */
+
+
+
+
 .container {
   margin: 0 15px;
 }
+
 .page-header {
-  font-family: var(--titles);
-  color: var(--white);
-  background-color: var(--blue-green);
-  position: sticky;
-  top: 0;
+  background-color: var(--blue-green-95);
+  position: fixed;
   width: 100%;
-  text-transform: uppercase;
   height: 105px;
+  text-transform: uppercase;
+  z-index: 10;
 }
 
 .page-header h1 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,34 +25,115 @@
 }
 
 .page-header .nav {
-  width: 100%;
-  height: 45px;
-  background-color: var(--aqua);
-  font-size: 1.5rem;
-  list-style: none;
+  background-color: var(--aqua-75);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  height: 45px;
+  list-style: none;
 }
 
 .hero {
-  height: 300px;
+  height: 420px; 
   background-image: url("../images/hero-small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
- .div {
-  height: 100%;
-}
 
 .slogan {
-color: var(--black);
-font-family: var(--content);
-font-size: 18px;
-margin: 15px;
-padding: 10px;
-background-color: var(--white);
-top: 328px;
-position: absolute;
+  margin: 0 15px;
+  padding: 14px 15px 16px;
+  background-color: var(--white);
+  top: 387px;
+  position: absolute;
 } 
+
+/* ---------- ↑ CÓDIGO BASE // BORRAR!! ↑  ----------- */
+/* --------------------------------------------------- */
+/* ----- ↓ CÓDIGO PROBABLEMENTE REPETIDO ↓ -----*/
+
+.team {
+  padding-bottom: 45px;
+  background-color: rgb(184, 184, 185, 0.2);
+}
+
+/* ¿EN LUGAR DE CLASE CONTENT? */
+h1,
+h2,
+h3,
+p {
+  margin-inline: 15px;
+}
+
+h2 {                 
+  color: var(--blue-green);
+  font-family: var(--titles);  
+  font-size: 24px;
+  font-weight: 500; 
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+p {
+  color: var(--gunmetal);
+  font-family: var(--content);
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+}
+
+/* --------- ↑ CÓDIGO PROBABLEMENTE REPETIDO ↑ ------- */
+/* --------------------------------------------------- */
+/* --------- ↓ CÓDIGO NUEVO DE DIANA ↓ --------- */
+
+h4 {
+  font-family: var(--content);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.about {
+  padding-block: 40px;
+  padding-inline: 15px;
+  text-align: center;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.name__img {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  margin-bottom: 16px;
+  margin-inline: auto;
+  border-radius: 8px;
+  border: solid 5px var(--black-8);
+} 
+
+.name__icons {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.name__icons > * {
+  color: var(--blue-green);
+  text-decoration: none;
+}
+
+.name__icons > *::after {
+  content: " ·";
+  font-weight: 700;
+  color: var(--gunmetal);
+} 
+
+.name__icons > *:hover {
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+
