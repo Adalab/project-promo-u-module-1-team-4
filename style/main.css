@@ -1,4 +1,3 @@
-
 .container {
   margin: 0 15px;
 }
@@ -30,18 +29,16 @@
 }
 
 .hero {
-  height: 420px; 
+  height: 420px;
   background-image: url("../images/hero-small.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.slogan {
-/*   margin: 0 15px; */
+.div_slogan {
   padding: 14px 15px 16px;
   background-color: var(--white);
   top: 387px;
   position: absolute;
-} 
-
+}

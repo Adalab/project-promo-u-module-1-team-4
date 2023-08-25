@@ -14,15 +14,15 @@
 
   --aqua: #14d9c4;
   --aqua-75: rgb(20, 217, 196, 0.75);
-  --blue-green: #099d8d; 
-  --blue-green-95: rgb(9, 157, 141, 0.95); 
+  --blue-green: #099d8d;
+  --blue-green-95: rgb(9, 157, 141, 0.95);
 
   --content: "Open Sans", sans-serif;
   --titles: "Rubik", sans-serif;
 
-  --SemiBold: 600;
-  --Medium: 500;
-  --Regular: 400;
+  --semiBold: 600;
+  --medium: 500;
+  --regular: 400;
 
   font-size: 62.5%;
 }
