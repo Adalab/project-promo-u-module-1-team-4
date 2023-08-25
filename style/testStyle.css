@@ -1,4 +1,4 @@
-/* Nombre del grupo */
+/* nombre del grupo */
 .textStyle-13 {
   color: var(--white);
   font-family: var(--titles);
@@ -10,7 +10,7 @@
   letter-spacing: normal;
 }
 
-/* Quiénes somos */
+/* nav cabecera */
 .textStyle-7 {
   color: var(--white);
   font-family: var(--titles);
@@ -34,7 +34,7 @@
   letter-spacing: normal;
 }
 
-/* Equipo */
+/* equipo */
 .textStyle-14 {
   color: var(--aqua);
   font-family: var(--titles);
@@ -58,7 +58,7 @@
   letter-spacing: normal;
 }
 
-/* fortalezas y debilidades*/
+/* fortalezas y debilidades */
 .textStyle-6 {
   color: var(--blue-green);
   font-family: var(--titles);
@@ -67,5 +67,29 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 2.05;
+  letter-spacing: normal;
+}
+
+/* quiernes somos */
+.textStyle-5 {
+  color: var(--blue-green);
+  font-family: var(--titles);
+  font-size: 2.4rem;
+  font-weight: var(--medium);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+}
+
+/* Nombres de cada una */
+.textStyle-8 {
+  color: var(--black);
+  font-family: var(--content);
+  font-size: 2rem;
+  font-weight: var(--regular);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.25;
   letter-spacing: normal;
 }

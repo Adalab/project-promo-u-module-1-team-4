@@ -85,40 +85,27 @@
   padding: 0 5px;
 }
 
-
-.about h4 {
-  font-family: var(--content);
-  font-size: 20px;
-  margin-bottom: 10px;
+.about {
+  padding-block: 35px;
+  padding-inline: 15px;
+  text-align: center;
 }
 
 .about h2 {                 
-  color: var(--blue-green);
-  font-family: var(--titles);  
-  font-size: 24px;
-  font-weight: 500; 
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .about p {
-  color: var(--gunmetal);
-  font-family: var(--content);
-  font-size: 1.6rem;
-  margin-bottom: 24px;
-}
-
-.about {
-  padding-block: 40px;
-  padding-inline: 15px;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .name {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 5px;
 }
 
 .name__img {
@@ -134,20 +121,23 @@
 .name__icons {
   font-size: 1.6rem;
   margin-bottom: 40px;
+  letter-spacing: .2rem;
 }
 
-.name__icons > * {
+.name__icons a {
   color: var(--blue-green);
   text-decoration: none;
 }
 
-.name__icons > *::after {
+.name__icons a:hover {
+  color: var(--gunmetal);
+  text-decoration: none;
+}
+
+/* después de todos los a (links) menos el último hijo */
+.name__icons a:not(:last-child)::after {
   content: " ·";
   font-weight: 700;
   color: var(--gunmetal);
 } 
 
-.name__icons > *:hover {
-  color: var(--gunmetal);
-  text-decoration: none;
-}
