@@ -1,9 +1,4 @@
 
-/* ----------- ↓ CÓDIGO BASE // BORRAR!! ↓  ----------- */
-
-
-
-
 .container {
   margin: 0 15px;
 }
@@ -43,97 +38,10 @@
 }
 
 .slogan {
-  margin: 0 15px;
+/*   margin: 0 15px; */
   padding: 14px 15px 16px;
   background-color: var(--white);
   top: 387px;
   position: absolute;
 } 
-
-/* ---------- ↑ CÓDIGO BASE // BORRAR!! ↑  ----------- */
-/* --------------------------------------------------- */
-/* ----- ↓ CÓDIGO PROBABLEMENTE REPETIDO ↓ -----*/
-
-.team {
-  padding-bottom: 45px;
-  background-color: rgb(184, 184, 185, 0.2);
-}
-
-/* ¿EN LUGAR DE CLASE CONTENT? */
-h1,
-h2,
-h3,
-p {
-  margin-inline: 15px;
-}
-
-h2 {                 
-  color: var(--blue-green);
-  font-family: var(--titles);  
-  font-size: 24px;
-  font-weight: 500; 
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-p {
-  color: var(--gunmetal);
-  font-family: var(--content);
-  font-size: 1.6rem;
-  margin-bottom: 24px;
-}
-
-/* --------- ↑ CÓDIGO PROBABLEMENTE REPETIDO ↑ ------- */
-/* --------------------------------------------------- */
-/* --------- ↓ CÓDIGO NUEVO DE DIANA ↓ --------- */
-
-h4 {
-  font-family: var(--content);
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.about {
-  padding-block: 40px;
-  padding-inline: 15px;
-  text-align: center;
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.name__img {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  margin-bottom: 16px;
-  margin-inline: auto;
-  border-radius: 8px;
-  border: solid 5px var(--black-8);
-} 
-
-.name__icons {
-  font-size: 1.6rem;
-  margin-bottom: 40px;
-}
-
-.name__icons > * {
-  color: var(--blue-green);
-  text-decoration: none;
-}
-
-.name__icons > *::after {
-  content: " ·";
-  font-weight: 700;
-  color: var(--gunmetal);
-} 
-
-.name__icons > *:hover {
-  color: var(--gunmetal);
-  text-decoration: none;
-}
 
