@@ -56,5 +56,16 @@
   font-style: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  text-align: center;
+}
+
+/* fortalezas y debilidades*/
+.textStyle-6 {
+  color: var(--blue-green);
+  font-family: var(--titles);
+  font-size: 2.2rem;
+  font-weight: var(--medium);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.05;
+  letter-spacing: normal;
 }

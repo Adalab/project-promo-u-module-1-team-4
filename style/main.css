@@ -42,3 +42,45 @@
   top: 387px;
   position: absolute;
 }
+.team {
+  margin-top: 76px;
+  margin-bottom: 30px;
+}
+.team h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.team p {
+  text-align: center;
+  padding: 10px;
+}
+.rectangle {
+  background-color: var(--white);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  top: -20px;
+  margin: auto;
+}
+
+.strAndWeak {
+  background-color: var(--cool-grey-2);
+  padding: 16px;
+  position: relative;
+  padding-bottom: 45px;
+}
+.weak {
+  margin-top: 30px;
+}
+.strAndWeak h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+.strAndWeak p {
+  text-align: center;
+  padding: 0 5px;
+}
