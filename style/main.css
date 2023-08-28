@@ -144,4 +144,34 @@
   font-weight: 700;
   color: var(--gunmetal);
 } 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: solid 1px var(--cool-grey);
+ 
+}
+
+.copy {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.footer-ul {
+  list-style-type: none;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+
+}
+
+.logo{
+  width: 116;
+  height: 45px;
+ margin-bottom: 45px;
+
+}
+
+
 
