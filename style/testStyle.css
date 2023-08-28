@@ -93,3 +93,25 @@
   line-height: 2.25;
   letter-spacing: normal;
 }
+
+.textStyle-12 {
+  color: var(--cool-grey);
+  font-family: var(--content);
+  font-size: 1.4rem;
+  font-weight: var(--regular);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
+
+.textStyle {
+  color: var(--gunmetal-75);
+  font-family: var(--content);
+  font-size: 1.4rem;
+  font-weight: var(--semiBold);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+}
