@@ -82,13 +82,9 @@ Then you can see that:
 
 ## Autores ✒️ / Authors ✒️
 
-![Diana Mármol] (https://raw.githubusercontent.com/Adalab/project-promo-u-module-1-team-4/main/src/images/avatarDiana.jpeg)
 - **Diana Mármol** [Github](https://github.com/dianaString)
-![Mayte González](https://raw.githubusercontent.com/Adalab/project-promo-u-module-1-team-4/main/src/images/avatarMayte.jpeg)
 - **Mayte González** [Github](https://github.com/MayteGonz)
-![Aranzazu Barrutia](https://raw.githubusercontent.com/Adalab/project-promo-u-module-1-team-4/main/src/images/avatarAranzazu.jpg)
 - **Aranzazu Barrutia** [Github](https://github.com/Aranzazu-Barrutia)
-![Ainhoa de las Heras](https://raw.githubusercontent.com/Adalab/project-promo-u-module-1-team-4/main/src/images/avatarAinhoa.jpg)
 - **Ainhoa de las Heras** [Github](https://github.com/Ainhoadlhs)
 
 ## Colaboradores 🖊️ / Partners 🖊️
