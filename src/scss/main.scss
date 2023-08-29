@@ -21,15 +21,18 @@
   --light-grey-blue: #b8b8b91a;
   --gunmetal: #54585a;
   --gunmetal-75: #54585abf;
+  --gunmetal-67: #54585aab;
   --cool-grey: #b8b8b9;
   --cool-grey-2: #b8b8b934;
  
   --white: #fff;
+  --white-8: #ffffffcc; 
 
   --aqua: #14d9c4;
   --aqua-75: #14d9c4bf;
   --blue-green: #099d8d;
   --blue-green-95: #099d8df2;
+  --blue-green-0: #099d8e00;
 
   --content: "Open Sans", sans-serif;
   --titles: "Rubik", sans-serif;
@@ -160,7 +163,7 @@
 
   /*Main css*/
   .container {
-    margin: 0 15px;
+    margin-inline: 15px;
   }
   
   .page-header {
@@ -206,7 +209,9 @@
     padding: 14px 15px 16px;
     background-color: var(--white);
     top: 387px;
+    margin-block: 0;
     position: absolute;
+    
   }
   .team {
     margin-top: 76px;
@@ -337,10 +342,140 @@
   .logo{
     width: 116;
     height: 45px;
-   margin-bottom: 45px;
+  margin-bottom: 45px;
   
   }
   
+  /*Aranzazu*/
+@media(min-width:768px){
+  .page-header {
+    background-color: var(--blue-green-95);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-inline: 45px;
+    align-items: center;
+  }
+  .page-header .nav{
+    background-color: var(--blue-green-0);
+    gap: 18px;
+  }
+    // Aqui va el Hero
+    .hero {
+      background-image: url("../images/hero-medium.jpg");
+    }
+    .div_slogan {
+      background-color: var(--white-8);
+      width: 441px;
+      padding: 15px 30px;
+      margin-left: 46px;
+      margin-block: -47px;
+
+    }
+
+  // Aqui va el team
+  .team {
+    margin-top: 45px;
+  }
+  .team h2 {
+    color: var(--blue-green);
+  }
+  .team p {
+    color: var(--gunmetal-67);
+  }
+  .container {
+    margin-inline: 45px;
+  }
+  .boxesSW {
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+  }
+  .weak {
+    width: 50%;
+  }
+  .str {
+    width: 50%;
+  }
+
+  // Aqui va el footer
+  .footer {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    height: 170px;
+  }
+  .copy{
+    width: 399px;
+    margin-right: 551px;
+    margin-left: 45px;
+    
+  }
+  .footer-ul{
+    width: 324px;
+    margin-right: 45px;
+    margin-bottom: 56px;
+    align-items: flex-end;
+  }
+  .logo {
   
-  
-  
+    width: 115.90px;
+    margin-right: 238.1px;
+    margin-bottom:60px;
+  }
+}
+  @media(min-width:1200px) {
+    .page-header {
+      padding-inline: 142px;
+    }
+
+        // Aqui va el Hero
+    .hero {
+      height: 550px;
+      background-image: url("..//images/hero-big.jpg");
+        }
+    .div_slogan{
+      background-color: var(--white-8);
+      width: 574px;
+      height: 90px;
+      margin-left: 138px;
+      margin-top: 73px;
+    }
+    .slogan {
+      font-size: 2.4rem;
+    } 
+
+    // Aqui va el team
+    .team {
+      margin-inline: 300px;
+    }
+    .boxesSW {
+      gap: 45px;
+    }
+      // Aqui va el footer
+    .footer {
+      position: relative;
+      display: flex;
+      flex-flow: row-reverse wrap;
+      height: 170px;
+    }
+    .copy{
+      
+      width: 172px;
+      margin-right: 890px;
+      margin-left: 45px;
+      margin-top: 30px;
+    }
+    .footer-ul{
+      width: 324px;
+      margin-right: 138px;
+      margin-bottom: 56px;
+      align-items: flex-end;
+    }
+    .logo {
+      width: 115.90px;
+      margin-right: 484.1px;
+      margin-bottom:60px;
+      
+    }
+  }
