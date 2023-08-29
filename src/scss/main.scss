@@ -399,6 +399,40 @@
     width: 50%;
   }
 
+  // Aquí va el about 
+
+    .about {
+    padding-inline: 30px; /* +15px de la clase container = 45px en total */
+    }
+
+    .about p {
+      padding-inline: 0px;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .name {
+      flex-direction: row;
+      text-align: left;
+      gap: 3rem;
+    }
+    .name h4 {
+      padding-top: 0px;
+    }
+    .name__img {
+      width: 205px;
+      height: 205px;
+      margin-inline: 0;
+      margin-bottom: 60px;
+    }
+    .name__text {
+      width: 460px; /* original 440 */
+    }
+    /* todos los article con clase name que sean pares */
+    article.name:nth-of-type(even) {
+      flex-direction: row-reverse;
+      text-align: right;
+    }
+
   // Aqui va el footer
   .footer {
     display: flex;
@@ -424,7 +458,7 @@
     margin-bottom:60px;
   }
 }
-  @media(min-width:1200px) {
+  @media(min-width:1200px){
     .page-header {
       padding-inline: 142px;
     }
@@ -451,6 +485,17 @@
     }
     .boxesSW {
       gap: 45px;
+    }
+
+     // Aquí va el about 
+
+     .about {
+      padding-inline: 125px; /* +15px de la clase container = 140px en total */
+    }
+    .name__img {
+      width: 278px;
+      height: 278px;
+      margin-inline: 0;
     }
       // Aqui va el footer
     .footer {
