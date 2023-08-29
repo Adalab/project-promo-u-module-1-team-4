@@ -1,0 +1,105 @@
+.about {
+    padding-top: 30px;
+    padding-inline: 15px;
+    text-align: center;
+    scroll-margin-top: 130px;
+  }
+  
+  .about h2 {                 
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    padding-inline: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .name__img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-inline: auto;
+    border-radius: 8px;
+    border: solid 5px var(--black-8);
+  } 
+  
+  .name h4 {
+    padding-top: 15px;
+  }
+  
+  .name__icons {
+    font-size: 1.6rem;
+    margin-bottom: 45px;
+    letter-spacing: .2rem;
+  }
+  
+  .name__icons a {
+    color: var(--blue-green);
+    text-decoration: none;
+  }
+  
+  .name__icons a:hover {
+    color: var(--gunmetal);
+    text-decoration: none;
+  }
+  
+  /* después de todos los a (links) menos el último hijo */
+  .name__icons a:not(:last-child)::after {
+    content: " ·";
+    font-weight: 700;
+    color: var(--gunmetal);
+  } 
+
+  @media(min-width:768px){
+    .about {
+      padding-inline: 30px; /* +15px de la clase container = 45px en total */
+      }
+  
+      .about p {
+        padding-inline: 0px;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+      }
+      .name {
+        flex-direction: row;
+        text-align: left;
+        gap: 3rem;
+      }
+      .name h4 {
+        padding-top: 0px;
+      }
+      .name__img {
+        width: 205px;
+        height: 205px;
+        margin-inline: 0;
+        margin-bottom: 60px;
+      }
+      .name__text {
+        width: 460px; /* original 440 */
+      }
+      /* todos los article con clase name que sean pares */
+      article.name:nth-of-type(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+      }
+  }
+  @media(min-width:1200px){
+    
+
+    .about {
+     padding-inline: 125px; /* +15px de la clase container = 140px en total */
+   }
+   .name__img {
+     width: 278px;
+     height: 278px;
+     margin-inline: 0;
+   }}
