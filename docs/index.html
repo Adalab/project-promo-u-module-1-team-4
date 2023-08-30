@@ -2,67 +2,159 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nakama Team</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9c67de0d99.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
-
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
+    <!-- -Header- -->
+    <header class="header">
+      <h1 class="header_h1"><a class="flower" href="index.html">Nakama team</a></h1>
+      <nav class="header_nav">
+        <ul class="header_nav_ul">
+          <li><a class="flower" href="index.html#team">Equipo</a></li>
+          <li><a class="flower" href="index.html#about">Quienes somos</a></li>
+          <li><a class="flower" href="contact.html">Contacto</a></li>
         </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      </nav>
+    </header>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
 
-          </li>
-        </ul>
-      </main>
+    <main>
+      <section class="hero">
+        <div class="container hero_slogan">
+          <p class="hero_slogan-p">
+            Unidas por Nakama, programando belleza en cada labor conjunta.
+          </p>
+        </div>
+      </section>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+      <section id="team" class="team">
+        <div class="container team_container">
+          <h2 class="team_container_h2">Equipo</h2>
+          <p class="team_container_p">
+            Bienvenidxs a Nakama Team, nosotras somos Diana, Mayte, Aranzazu y Ainhoa,
+            futuras web developers que estamos dando un giro para mejorar la
+            reconfiguraración de nuestras vidas.
+          </p>
+          <p class="team_container_p">
+            Nuestro nombre de equipo significa que más que simples compañeras, somos
+            almas entrelazadas por intereses comunes, creando un círculo de apoyo
+            inquebrantable.
+          </p>
+        </div>
+      </section>
 
-        </small>
-      </footer>
+      <section class="strAndWeak">
+        <div class="strAndWeak_rectangle"></div>
+        <div class="container strAndWeak_boxesSW">
+          <div class="str">
+            <h3 class="str_h3">Fortalezas</h3>
+            <p class="str_p">
+              En el poco tiempo que llevamos trabajando juntas hemos podido
+              entendernos a la perfección. <br />
+              El trabajo en equipo ha logrado que aprendamos las unas de las otras,
+              combinando nuestras mejores habilidades y consiguiendo crear un equipo
+              que funciona en perfecta sincronía.
+            </p>
+          </div>
+          <div class="weak">
+            <h3 class="weak_h3">Debilidades</h3>
+            <p class="weak_p">
+              Dado que llevamos poco tiempo programando, nuestra experiencia es la que
+              nos está dando Adalab. <br />
+              Estamos el proceso de aprendizaje, afianzando los conceptos con los que
+              seguiremos practicando para mejorar poco a poco.
+            </p>
+          </div>
+        </div>
+      </section>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+      <section id="about" class="about">
+        <h2 class="about_h2">Quiénes somos</h2>
+        <article class="name">
+          <img class="name_img" src="./assets/images/avatarDiana.jpeg" alt="Diana Mármol" />
+          <div class="name_text">
+            <h4 class="name_text-h4">Diana Mármol</h4>
+            <p class="name_text-p">Ilustradora y diseñadora con varios años de experiencia trabajando para empresas nacionales e internacionales. Un día decidí que quería ir más allá y aprender programación con la misma pasión con la que aprendí a dibujar, logrando mezclar ambos mundos y desarrollar ideas más completas.</p>
+            <div class="name_text-icons">
+              <a class="flower fa-brands fa-twitter" href="#" title="twitter"></a>
+              <a class="flower fa-brands fa-linkedin-in" href="#" title="linkedin"></a>
+              <a class="flower fa-brands fa-github-alt" href="#" title="Github"></a>
+              <a class="flower fa-solid fa-envelope" href="#" title="email"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="name">
+          <img class="name_img" src="./assets/images/avatarMayte.jpeg" alt="Mayte González" />
+          <div class="name_text">
+            <h4 class="name_text-h4">Mayte González</h4>
+            <p class="name_text-p">Después de un tiempo en el campo de la Biología, decidí cambiar mi rumbo a la programación. 
+          Siempre me ha interesado mucho el desarrollo y todo lo que tiene que ver con ordenadores. Por ello me decidí a dar el paso e iniciarme en este apasionante mundo. 
+          Tengo muchas ganas de aprender cosas nuevas y seguir formándome en este entorno tan mágico. 
+          </p>
+            <div class="name_text-icons">
+              <a class="flower fa-brands fa-twitter" href="#" title="twitter"></a>
+              <a class="flower fa-brands fa-linkedin-in" href="#" title="linkedin"></a>
+              <a class="flower fa-brands fa-github-alt" href="#" title="Github"></a>
+              <a class="flower fa-solid fa-envelope" href="#" title="email"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="name">
+          <img class="name_img" src="./assets/images/avatarAranzazu.jpg" alt="Aranzazu Barrutia" />
+          <div class="name_text">
+            <h4 class="name_text-h4">Aranzazu Barrutia</h4>
+            <p class="name_text-p">Como dice mi padre, soy la Leonardo Da Vincci de la familia. Mi bagaje empieza en historia del arte, pasando por la fotografía y el diseño de moda para terminar formándome como sumiller y llegar a ser jefa de cocina.
+          Como no me canso de aprender, decidí darle un giro a mi vida de 360º para poder dedicarle más tiempo a mi pequeña, esto me ha traído hasta el mundo de la programación el cual creo que me dará la oportunidad de conciliar.</p>
+            <div class="name_text-icons">
+              <a class="flower fa-brands fa-twitter" href="#" title="twitter"></a>
+              <a class="flower fa-brands fa-linkedin-in" href="#" title="linkedin"></a>
+              <a class="flower fa-brands fa-github-alt" href="#" title="Github"></a>
+              <a class="flower fa-solid fa-envelope" href="#" title="email"></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="name">
+          <img class="name_img" src="./assets/images/avatarAinhoa.jpg" alt="Ainhoa de las Heras" />
+          <div class="name_text">
+            <h4 class="name_text-h4">Ainhoa de las Heras</h4>
+            <p class="name_text-p">Ex-administrativa, tenía ganas de cambiar mi rumbo laboral y darle un giro fresco, mejorando también mis oportunidades en el trabajo. Me encanta la tecnología, los videojuegos, estar en la naturaleza, los animales y viajar. Mi objetivo es seguir aprendiendo y sentir la emoción de probar cosas nuevas en todo lo que hago.</p>
+            <div class="name_text-icons">
+              <a class="flower fa-brands fa-twitter" href="#" title="twitter"></a>
+              <a class="flower fa-brands fa-linkedin-in" href="#" title="linkedin"></a>
+              <a class="flower fa-brands fa-github-alt" href="#" title="Github"></a>
+              <a class="flower fa-solid fa-envelope" href="#" title="email"></a>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p class="footer_copy">Nakama team © 2023</p>
+      <ul class="footer_ul">
+        <li><a class="flower" href="index.html#team">Equipo</a></li>
+        <li><a class="flower" href="index.html#about">Quienes somos</a></li>
+        <li><a class="flower" href="contact.html">Contacto</a></li>
+      </ul>
+      <img class="footer_logo" src="./assets/images/logo-adalab.png" alt="logo adalab" />
+    </footer>
+
+
   </body>
 </html>
