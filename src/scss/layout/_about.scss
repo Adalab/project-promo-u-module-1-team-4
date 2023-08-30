@@ -3,103 +3,95 @@
     padding-inline: 15px;
     text-align: center;
     scroll-margin-top: 130px;
-  }
-  
-  .about h2 {                 
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-  }
-  
-  .about p {
-    padding-inline: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 15px;
-  }
-  
+    @media(min-width:768px){
+      padding-inline: 30px; /* +15px de la clase container = 45px en total */
+      }
+    @media(min-width:1200px){
+         padding-inline: 125px; /* +15px de la clase container = 140px en total */
+      }
+    &_h2 {
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      @include textStyle($blue-green, $titles, 2.4rem, $medium, 1.88);
+    }
+  }  
   .name {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  
-  .name__img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    margin-inline: auto;
-    border-radius: 8px;
-    border: solid 5px var(--black-8);
-  } 
-  
-  .name h4 {
-    padding-top: 15px;
-  }
-  
-  .name__icons {
-    font-size: 1.6rem;
-    margin-bottom: 45px;
-    letter-spacing: .2rem;
-  }
-  
-  .name__icons a {
-    color: var(--blue-green);
-    text-decoration: none;
-  }
-  
-  .name__icons a:hover {
-    color: var(--gunmetal);
-    text-decoration: none;
-  }
-  
-  /* después de todos los a (links) menos el último hijo */
-  .name__icons a:not(:last-child)::after {
-    content: " ·";
-    font-weight: 700;
-    color: var(--gunmetal);
-  } 
-
-  @media(min-width:768px){
-    .about {
-      padding-inline: 30px; /* +15px de la clase container = 45px en total */
+    @media(min-width:768px){
+          flex-direction: row;
+          text-align: left;
+          gap: 3rem;
+        }
+    &:nth-of-type(even){
+    @media(min-width:768px){
+    /* todos los article con clase name que sean pares */
+            flex-direction: row-reverse;
+            text-align: right;
+          }
       }
-  
-      .about p {
-        padding-inline: 0px;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-      }
-      .name {
-        flex-direction: row;
-        text-align: left;
-        gap: 3rem;
-      }
-      .name h4 {
-        padding-top: 0px;
-      }
-      .name__img {
-        width: 205px;
-        height: 205px;
-        margin-inline: 0;
-        margin-bottom: 60px;
-      }
-      .name__text {
+    &_img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      margin-inline: auto;
+      border-radius: 8px;
+      border: solid 5px $black-8;
+      @media(min-width:768px){
+          width: 205px;
+          height: 205px;
+          margin-inline: 0;
+          margin-bottom: 60px;
+        }
+      @media(min-width:1200px){
+            width: 278px;
+            height: 278px;
+            margin-inline: 0;
+          }
+    }
+    &_text {   
+      @media(min-width:768px){
         width: 460px; /* original 440 */
       }
-      /* todos los article con clase name que sean pares */
-      article.name:nth-of-type(even) {
-        flex-direction: row-reverse;
-        text-align: right;
+      &-h4{
+        padding-top: 15px;
+        @include textStyle($black, $content, 2rem, $regular, 2.25);
+        @media(min-width:768px){
+            padding-top: 0px;
+          }
       }
+    &-p{
+      padding-inline: 5px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      @include textStyle($gunmetal, $content, 1.6rem, $regular, 1.5);
+      @media(min-width:768px){
+          padding-inline: 0px;
+          padding-bottom: 5px;
+          margin-bottom: 15px;
+        }
+    }
+    &-icons {
+      font-size: 1.6rem;
+      margin-bottom: 45px;
+      letter-spacing: .2rem;
+      & a {
+        color: $blue-green;
+        text-decoration: none;
+        &:hover{    
+          color: $gunmetal;
+          text-decoration: none;
+        }
+          /* después de todos los a (links) menos el último hijo */
+        &:not(:last-child)::after {
+          content: " ·";
+          font-weight: 700;
+          color: $gunmetal;
+        }
+      }
+    }
   }
-  @media(min-width:1200px){
-    
+}
 
-    .about {
-     padding-inline: 125px; /* +15px de la clase container = 140px en total */
-   }
-   .name__img {
-     width: 278px;
-     height: 278px;
-     margin-inline: 0;
-   }}
