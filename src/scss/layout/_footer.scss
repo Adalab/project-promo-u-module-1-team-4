@@ -1,9 +1,7 @@
 .footer {
-/*   height: 250px; */
-  display: flex;
+  @include flexDisplay(0, center);
   flex-direction: column;
-  align-items: center;
-  border-top: solid 1px var(--cool-grey);
+  border-top: solid 1px $cool-grey;
 
   @media (min-width: 768px) {
     display: grid;
@@ -14,11 +12,13 @@
       "copy footerUl"
       "logo footerUl";
     row-gap: 10px;
-    margin: 24px 45px 56px;
+    padding: 24px 45px 56px;
+    margin-bottom: 56px;
   }
 
   @media (min-width: 1200px) {
-    margin: 24px 138px 47px; 
+    padding: 24px 138px 47px; 
+    margin-bottom: 47px;
   }
  
   &_copy {
@@ -36,10 +36,14 @@
     @include textStyle($gunmetal, $content, 1.4rem, $semiBold, 1.43);
     list-style-type: none;
     text-transform: uppercase;
-    display: flex;
+    @include flexDisplay(0, center);
     flex-direction: column;
-    align-items: center;
     margin-bottom: 30px;
+
+    & a {
+      color: $gunmetal;
+      text-decoration: none;
+    }
 
     @media (min-width: 768px) {
       grid-area: footerUl;
