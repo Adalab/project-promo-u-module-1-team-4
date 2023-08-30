@@ -1,84 +1,73 @@
 .footer {
+/*   height: 250px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   border-top: solid 1px var(--cool-grey);
+
+  @media (min-width: 768px) {
+    display: grid;
+    height: 90px;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+      "copy footerUl"
+      "logo footerUl";
+    row-gap: 10px;
+    margin: 24px 45px 56px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 24px 138px 47px; 
+  }
  
-}
-
-.copy {
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-.footer-ul {
-  list-style-type: none;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-
-}
-
-.logo{
-  width: 116;
-  height: 45px;
-margin-bottom: 45px;
-
-}
-
-@media(min-width:768px){
-  // Aqui va el footer
- /*  .footer {
-   
-    flex-flow: row-reverse wrap;
-    height: 170px;
-  }
-  .copy{
-    width: 399px;
-    margin-right: 551px;
-    margin-left: 45px;
-    
-  }
-  .footer-ul{
-    width: 324px;
-    margin-right: 45px;
-    margin-bottom: 56px;
-    align-items: flex-end;
-  }
-  .logo {
-  
-    width: 115.90px;
-    margin-right: 238.1px;
-    margin-bottom:60px;
-  } */
-}
-
-@media(min-width:1200px){
-    
-  .footer {
-    position: relative;
-    display: flex;
-    flex-flow: row-reverse wrap;
-    height: 170px;
-  }
-  .copy{
-    
-    width: 172px;
-    margin-right: 890px;
-    margin-left: 45px;
+  &_copy {
     margin-top: 30px;
-  }
-  /* .footer-ul{
-    width: 324px;
-    margin-right: 138px;
-    margin-bottom: 56px;
-    align-items: flex-end;
-  }
-  .logo {
-    width: 115.90px;
-    margin-right: 484.1px;
-    margin-bottom:60px;
+    margin-bottom: 20px;
+    @include textStyle($cool-grey, $content, 1.4rem, $regular, 1.43);
     
-  } */
+    @media (min-width: 768px) {
+      grid-area: copy;
+      margin: 0;
+    }
+  }
+
+  &_ul {
+    @include textStyle($gunmetal, $content, 1.4rem, $semiBold, 1.43);
+    list-style-type: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      grid-area: footerUl;
+      justify-content: center;
+      align-items: flex-end;
+      align-self: center;
+
+      gap: 10px;
+      margin: 0;
+    }
+  
+  }
+  
+  &_logo{
+    width: 116;
+    height: 45px;
+    margin-bottom: 45px;
+
+    @media (min-width: 768px) {
+      grid-area: logo;
+      width: 116px;
+      height: 45px;
+      margin:0;
+    }
+
+  }
+
 }
+
+
+
