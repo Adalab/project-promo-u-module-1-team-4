@@ -15,3 +15,14 @@ justify-content: $justifyContent;
 align-items: $alignItem;
 }
 
+@mixin backImage($name,$height) {
+    $url:"../images/#{$name}.jpg";
+    height: $height;
+    background-image: url($url);
+}
+
+@mixin propertiesBack() {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

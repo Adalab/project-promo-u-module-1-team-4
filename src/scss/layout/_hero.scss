@@ -1,18 +1,14 @@
 .hero {
-    height: 420px;
-    background-image: url("../images/hero-small.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include backImage(hero-small,420px);
+    @include propertiesBack() ;
+
 
     @media(min-width:768px){
-    background-image: url("../images/hero-medium.jpg");
+        @include backImage(hero-medium,420px);
     }
     @media(min-width:1200px){
-        height: 550px;
-        background-image: url("..//images/hero-big.jpg");
+        @include backImage(hero-big,550px);
     }
-
     &_slogan{
         padding: 14px 15px 16px;
         background-color: $white;

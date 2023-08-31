@@ -12,5 +12,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-   
+
+}
+
+.hero_contact{
+    @include backImage(contact_small,300px);
+    @include propertiesBack() ;
+}
+@media(min-width:768px){
+    @include backImage(contact_medium,300px);
+}
+@media(min-width:1200px){
+    @include backImage(contact_big,400px);
 }
