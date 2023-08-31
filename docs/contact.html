@@ -13,6 +13,20 @@
     />
   </head>
   <body>
+    <div aria-hidden="true">
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+        <div class='sakura'>🌸</div>
+    </div>
     <header class="header">
       <h1 class="header_h1"><a class="flower" href="index.html">Nakama team</a></h1>
       <nav class="header_nav">
@@ -23,6 +37,71 @@
         </ul>
       </nav>
     </header>
+
+    <main>
+      <section class="hero hero_contact">
+          <div class="hero_contact-image"></div>
+        </section>
+      <section class="contact">
+        <h2 class="title">Contacto</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse error eaque
+          officiis nesciunt quis nobis quaerat facilis quidem odit perferendis beatae
+          dolorem delectus, alias tempora autem hic ullam rem qui.
+        </p>
+        <p>todos los campos marcados con <span>*</span> son obligatorios.</p>
+      </section>
+
+      <section>
+        <form action="" method="" class="form">
+          <label for="name">Nombre completo<span>*</span></label>
+
+          <input type="text" name="name" id="name" placeholder="Nombre..." required />
+
+          <label for="email">Email <span>*</span></label>
+
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="nombre.apellidos@mail.com"
+            required
+          />
+
+          <label for="telephone">Teléfono</label>
+
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            placeholder="Ej: 123456789"
+          />
+
+          <label for="comments">Mensaje <span>*</span> </label>
+
+          <textarea
+            class="comments"
+            id="comments"
+            name="comments"
+            placeholder="¿Qué necesitas?"
+          ></textarea>
+
+          <input class="button" type="submit" value="enviar" />
+        </form>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p class="footer_copy">Nakama team © 2023</p>
+      <ul class="footer_ul">
+        <li><a class="flower" href="index.html#team">Equipo</a></li>
+        <li><a class="flower" href="index.html#about">Quienes somos</a></li>
+        <li><a class="flower" href="contact.html">Contacto</a></li>
+      </ul>
+      <img class="footer_logo" src="./assets/images/logo-adalab.png" alt="logo adalab" />
+    </footer>
+
 
   </body>
 </html>
