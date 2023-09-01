@@ -83,9 +83,9 @@ Then you can see that:
 ## Autores ✒️ / Authors ✒️
 
 [![Autor](https://img.shields.io/badge/-Diana_M%C3%A1rmol-grey?style=flat-square&logo=github&labelColor=grey&color=50c7de)](https://github.com/dianaString)
-[![Autor](https://img.shields.io/badge/-Mayte_Gonz%C3%A1lez-grey?style=flat-square&logo=github&labelColor=grey&color=6c8ef7)][Github](https://github.com/MayteGonz)
-[![Autor](https://img.shields.io/badge/-Aranzazu_Barrutia-purple?style=flat-square&logo=github&labelColor=grey&color=cb71fa)][Github](https://github.com/Aranzazu-Barrutia)
-[![Autor](https://img.shields.io/badge/-Ainhoa_de_las_Heras-pink?style=flat-square&logo=github&labelColor=grey&color=fd7ca6)][Github](https://github.com/Ainhoadlhs)
+[![Autor](https://img.shields.io/badge/-Mayte_Gonz%C3%A1lez-grey?style=flat-square&logo=github&labelColor=grey&color=6c8ef7)](https://github.com/MayteGonz)
+[![Autor](https://img.shields.io/badge/-Aranzazu_Barrutia-purple?style=flat-square&logo=github&labelColor=grey&color=cb71fa)](https://github.com/Aranzazu-Barrutia)
+[![Autor](https://img.shields.io/badge/-Ainhoa_de_las_Heras-pink?style=flat-square&logo=github&labelColor=grey&color=fd7ca6)](https://github.com/Ainhoadlhs)
 
 ## Colaboradores 🖊️ / Partners 🖊️
 
