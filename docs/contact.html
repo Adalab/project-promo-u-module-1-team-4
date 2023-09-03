@@ -21,11 +21,6 @@
         <div class='sakura'></div>
         <div class='sakura'></div>
         <div class='sakura'></div>
-        <div class='sakura'></div>
-        <div class='sakura'></div>
-        <div class='sakura'></div>
-        <div class='sakura'></div>
-        <div class='sakura'></div>
     </div>
     <header class="header">
       <h1 class="header_h1"><a class="flower" href="index.html">Nakama team</a></h1>
@@ -38,58 +33,76 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <section class="hero hero_contact">
           <div class="hero_contact-image"></div>
         </section>
       <section class="contact">
-        <h2 class="title">Contacto</h2>
+        <h2 class="contact_title">Contacto</h2>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse error eaque
-          officiis nesciunt quis nobis quaerat facilis quidem odit perferendis beatae
-          dolorem delectus, alias tempora autem hic ullam rem qui.
+        <p class="contact_info">
+          ¿Te interesa trabajar con nosotras? Para consultar cualquier duda sobre
+          nuestra forma de trabajar o nuestro equipo, no dudes en ponerte en contacto
+          con nosotras. Rellena el formulario que aparece a continuación y nos
+          pondremos en contacto contigo lo antes posible. ¡Muchas gracias!
         </p>
-        <p>todos los campos marcados con <span>*</span> son obligatorios.</p>
+        <p class="contact_required">
+          Todos los campos marcados con
+          <span class="contact_required-mark">*</span> son obligatorios.
+        </p>
       </section>
 
-      <section>
-        <form action="" method="" class="form">
-          <label for="name">Nombre completo<span>*</span></label>
+      <form class="form" action="" method="">
+        <label class="form_label" for="name"
+          >Nombre completo <span class="form_label-mark">*</span></label
+        >
 
-          <input type="text" name="name" id="name" placeholder="Nombre..." required />
+        <input
+          class="form_input"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Nombre..."
+          required
+        />
 
-          <label for="email">Email <span>*</span></label>
+        <label class="form_label" for="email"
+          >Email <span class="form_label-mark">*</span></label
+        >
 
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="nombre.apellidos@mail.com"
-            required
-          />
+        <input
+          class="form_input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="nombre.apellidos@mail.com"
+          required
+        />
 
-          <label for="telephone">Teléfono</label>
+        <label class="form_label" for="telephone">Teléfono</label>
 
-          <input
-            type="tel"
-            name="telephone"
-            id="telephone"
-            placeholder="Ej: 123456789"
-          />
+        <input
+          class="form_input"
+          type="tel"
+          name="telephone"
+          id="telephone"
+          placeholder="Ej: 123456789"
+        />
 
-          <label for="comments">Mensaje <span>*</span> </label>
+        <label class="form_label" for="comments"
+          >Mensaje <span class="form_label-mark">*</span>
+        </label>
 
-          <textarea
-            class="comments"
-            id="comments"
-            name="comments"
-            placeholder="¿Qué necesitas?"
-          ></textarea>
+        <textarea
+          class="form_textarea"
+          class="comments"
+          id="comments"
+          name="comments"
+          placeholder="¿Qué necesitas?"
+        ></textarea>
 
-          <input class="button" type="submit" value="enviar" />
-        </form>
-      </section>
+        <input class="form_button" type="submit" value="enviar" />
+      </form>
 
     </main>
     <footer class="footer">
