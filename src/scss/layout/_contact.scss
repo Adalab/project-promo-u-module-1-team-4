@@ -1,27 +1,78 @@
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem 1.5rem 6rem;
-    // width: 100vw;
-    
+.hero_contact {
+  @include backImage(contact_small, 300px);
+  @include propertiesBack();
+
+  @media (min-width: 768px) {
+    @include backImage(contact_medium, 300px);
+  }
+  @media (min-width: 1200px) {
+    @include backImage(contact_big, 400px);
+  }
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem 1.5rem 6rem;
+
+  @media (min-width: 768px) {
+    padding-inline: 16.3rem;
+  }
+  @media (min-width: 1200px) {
+    padding-inline: 30rem;
+  }
+  &_title {
+    @include textStyle($blue-green, $titles, 2.4rem, $medium, 1.88);
+    text-transform: uppercase;
+  }
+  &_info {
+    @include textStyle($gunmetal, $content, 1.6rem, $medium, 1.88);
+    text-align: center;
+  }
+  &_required {
+    @include textStyle($gunmetal, $content, 1.2rem, $medium, 1.88);
+    padding-top: 30px;
+    &-mark {
+      color: $aqua;
+    }
+  }
+}
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-}
-
-.hero_contact{
-    @include backImage(contact_small,300px);
-    @include propertiesBack() ;
-}
-@media(min-width:768px){
-    @include backImage(contact_medium,300px);
-}
-@media(min-width:1200px){
-    @include backImage(contact_big,400px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-inline: 1.5rem;
+  &_label {
+    @include textStyle($gunmetal, $content, 1.4rem, $medium, 1.88);
+    margin-bottom: 0.7rem;
+    &-mark {
+      color: aqua;
+    }
+  }
+  &_input {
+    height: 45px;
+  }
+  &_input,
+  &_textarea {
+    width: 100%;
+    font-family: $content;
+    color: $gunmetal;
+    font-size: 1.6rem;
+    padding: 11px 15px;
+    margin-bottom: 1.3rem;
+    border: 1px solid $cool-grey;
+    &::placeholder {
+      color: $cool-grey;
+      font-size: 1.4rem;
+    }
+    &:focus {
+      background-color: #e0e0e04b;
+    }
+  }
+  &_button {
+    width: 100%;
+    margin-bottom: 6rem;
+  }
 }
