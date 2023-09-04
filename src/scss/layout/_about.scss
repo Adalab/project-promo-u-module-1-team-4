@@ -4,10 +4,10 @@
   text-align: center;
   scroll-margin-top: 130px;
   @media (min-width: 768px) {
-    padding-inline: 30px; /* +15px de la clase container = 45px en total */
+    padding-inline: 30px;
   }
   @media (min-width: 1200px) {
-    padding-inline: 125px; /* +15px de la clase container = 140px en total */
+    padding-inline: 125px;
   }
   &_h2 {
     text-align: center;
